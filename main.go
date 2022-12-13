@@ -105,5 +105,5 @@ func main() {
 	Router.HandleFunc("/roll", rollHandler).Methods("POST")
 
 	log.Println("Listening on port 8080")
-	log.Fatal(http.ListenAndServe("localhost:8080", Router))
+	log.Fatal(http.ListenAndServe(":8080", Router))
 }
